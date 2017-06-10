@@ -1,6 +1,6 @@
 {
   "name": "react-bundle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "BSD-3-Clause",
   "description": "Lazy load dependencies (bundle-loader or import())",
   "keywords": ["webpack", "import", "bundle-loader", "lazy", "load"],

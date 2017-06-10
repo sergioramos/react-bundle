@@ -1,6 +1,6 @@
 # react-bundle
 
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+[![License: BSD-3-Clause](https://img.shields.io/npm/l/react-bundle.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![npm](https://img.shields.io/npm/v/react-bundle.svg)](https://npmjs.com/package/react-bundle)
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg)](https://github.com/RichardLitt/standard-readme)
 
