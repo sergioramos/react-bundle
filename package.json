@@ -1,6 +1,6 @@
 {
   "name": "react-bundle",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "BSD-3-Clause",
   "description": "Lazy load dependencies (bundle-loader or import())",
   "keywords": ["webpack", "import", "bundle-loader", "lazy", "load"],
@@ -9,6 +9,7 @@
   "jsnext:main": "dist/react-bundle.es.js",
   "module": "dist/react-bundle.es.js",
   "entry": "src/index.js",
+  "files": ["dist"],
   "scripts": {
     "lint": "eslint . --fix",
     "test": "echo 0 # bup && NODE_ENV=test jest --coverage",
