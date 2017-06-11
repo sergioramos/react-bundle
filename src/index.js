@@ -24,13 +24,11 @@ class Bundle extends Component {
     const loaded = mod =>
       this.setState({ mod: mod.default ? mod.default : mod });
 
-    load(mod => {
-      if (!isPromise(mod)) {
-        return loaded(mod);
-      }
+    const res = load(loaded);
 
-      mod.then(loaded);
-    });
+    if (isPromise(res)) {
+      res.then(loaded);
+    }
   }
 
   render() {
