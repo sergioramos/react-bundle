@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import isPromise from 'ispromise';
 
 class Bundle extends Component {
@@ -6,8 +6,19 @@ class Bundle extends Component {
     mod: null
   };
 
+  constructor() {
+    super();
+
+    this.__mounted = false;
+  }
+
   componentWillMount() {
+    this.__mounted = true;
     this.load(this.props);
+  }
+
+  componentWillUnmount() {
+    this.__mounted = false;
   }
 
   componentWillReceiveProps(nextProps) {
@@ -17,12 +28,21 @@ class Bundle extends Component {
   }
 
   load({ load }) {
+    if (!this.__mounted) {
+      return;
+    }
+
     this.setState({
       mod: null
     });
 
-    const loaded = mod =>
+    const loaded = mod => {
+      if (!this.__mounted) {
+        return;
+      }
+
       this.setState({ mod: mod.default ? mod.default : mod });
+    };
 
     const res = load(loaded);
 
