@@ -6,13 +6,13 @@
 
 Lazy load dependencies (using [bundle-loader](https://github.com/webpack-contrib/bundle-loader) or [`import()`](https://github.com/tc39/proposal-dynamic-import))
 
-*Taken from [react-router](https://github.com/ReactTraining/react-router/blob/dfec1065c6c70c7f520328c7113aad781616c666/packages/react-router-website/modules/components/Bundle.js)*
+_Taken from [react-router](https://github.com/ReactTraining/react-router/blob/dfec1065c6c70c7f520328c7113aad781616c666/packages/react-router-website/modules/components/Bundle.js)_
 
 ## Table of Contents
 
-- [Install](#install)
-- [Usage](#usage)
-- [License](#license)
+* [Install](#install)
+* [Usage](#usage)
+* [License](#license)
 
 ## Install
 
