@@ -1,15 +1,23 @@
 {
   "name": "react-bundle",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "license": "BSD-3-Clause",
   "description": "Lazy load dependencies (bundle-loader or import())",
-  "keywords": ["webpack", "import", "bundle-loader", "lazy", "load"],
+  "keywords": [
+    "webpack",
+    "import",
+    "bundle-loader",
+    "lazy",
+    "load"
+  ],
   "repository": "github:ramitos/react-bundle",
   "main": "dist/react-bundle.umd.js",
   "jsnext:main": "dist/react-bundle.es.js",
   "module": "dist/react-bundle.es.js",
   "entry": "src/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "lint": "eslint . --fix --ext .js --ext .md",
     "fmt": "prettier --write --single-quote *.md src/*.js *.json",
